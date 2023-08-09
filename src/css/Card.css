@@ -1,0 +1,59 @@
+    #card:hover {
+        transform: scale(1.01);
+        transition: 0.1s linear all;
+    }
+
+   
+    #card {
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        max-width: 300px;
+        padding: 1em 1em;
+        width: 900px;
+        cursor:pointer;
+    }
+
+    #location {
+        font-size: 12px;
+        margin-bottom:1em;
+        font-weight:bold;
+        display:flex;
+        align-items:center;
+        gap:0.5em;
+    }
+
+    #attending {
+        /* box-shadow: 4px 4px 4px #eee; */
+        z-index: 1;
+        width:max-content;
+        padding:0.5em;
+        position:absolute;
+        right: 0;
+        background-color: green;
+        color:#fff;
+        font-weight: bold;
+        font-size:12px;
+        top: -7%;
+    }
+
+    #price {
+        font-size:'14px';
+        font-weight:bold;
+        margin-top:2em;  
+        color:red;
+    }
+
+
+
+    #lower-card {
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-top: 1em;
+        font-size: 12px;
+    };
+
+
+ .date-time {
+    font-size: 12px;
+}

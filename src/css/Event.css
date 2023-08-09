@@ -1,0 +1,94 @@
+.container {
+    padding: 2em 8em;
+}
+
+
+
+.event {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px gray;
+    padding: 1em;
+    width: 40%;
+}
+
+div.event .date {
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+div.event .description {
+    font-size: 18px;
+    margin: 0.5em 0;
+}
+
+div.user-profile {
+    background: #000000;
+    width: max-content;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #ccc; 
+};
+
+
+
+.profile-events {
+    text-align: center;
+}
+
+.loader {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 100%;
+  position: absolute;
+  left: -15%;
+  height: 100vh;
+}
+
+.my-content {
+    flex: 2;
+    font-size: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+
+  td.description {
+    max-width: 300px; /* Adjust this value as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+
+    td, th {
+      font-size: 10px;
+    }
+
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,400&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.my-content > p.small {
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(97, 97, 97);
+    margin: 0;
+}
+
+.my-content p {
+    margin-top: 1em;
+}
+
+.my-content button {
+    margin-top: 1.5em;
+}
+
+.my-content {
+    align-self: center;
+}
+
+.my-banner {
+    background: url(../assets/night-g1300f7385_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    opacity: 1;
+    z-index: -10;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    padding: 2em 0em;
+}
+
+.content-wrapper {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    width:100%;
+    padding: 12em 0em;
+    gap: 6em;
+    flex-wrap:wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-content > p.headline {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.my-content p.small {
+    color: #fff;
+}
+.my-content h1 {
+    margin-top: 0.5em;
+}
+
+.my-content button {
+    margin-top: 2em;
+}
+
+.newsfeed {
+    display:flex;
+    gap:2em;
+    padding-bottom: 4em;
+}
+
+
+.flex-container {
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:2em; 
+    margin-top:4em;
+    justify-content: center;
+}
+.card > .row {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.card > .row > div {
+    display: flex;
+    align-items: center;
+    background-color: #efe;
+    box-shadow: 2px 2px 2px #eee;
+    padding: 1em;
+    width: 400px;
+    cursor: pointer;
+}
+
+
+.users {
+    padding-top: 3em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 100%;
+/* overflow: scroll; */
+}
+
+.users > div {
+    margin-top: 1em;
+    flex: 1 1 500px;
+    width: 500px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 900px) {
+    .card > .row > div {
+        width: 100%;
+    }
+
+    .card > .row {
+        flex-wrap: wrap;
+    }
+    .content-wrapper {
+        padding: 9em 0;
+    }
+    .flex-container {
+        gap: 2em;
+        justify-content: center;
+    }
+
+    
+}
