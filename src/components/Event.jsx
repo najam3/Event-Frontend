@@ -96,7 +96,8 @@ if(isLoading || loadingUserEvents) {
     </div>
     </div>
   )
-} else {
+}
+ else {
   return (
     <section style={{padding:'4em 0'}}>
       <div className={ width <=800 ? 'small-container' : 'container'  }>
