@@ -1,6 +1,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import {EventContext} from '../context/Context';
 import { Link } from "react-router-dom";
+import UseWindowResize from '../custom hooks/UseWindowResize';
 
 const Registration = () => {
     const context = useContext(EventContext);
@@ -9,7 +10,7 @@ const Registration = () => {
     const [nameMessage, setNameMessage] = useState('');
     const ref = useRef(null);
     const nameRef = useRef(null);
-
+    const { width } = UseWindowResize();
     const [user, setUser] = useState({
         name: '',
         password: '',
@@ -69,7 +70,7 @@ const Registration = () => {
         }, [color])
     return (
     <div className="registration-now" style={{paddingTop: '3em'}}>
-        <div className="container">
+        <div className={width <=800 ? 'small-container' : 'container'}>
             {
                responseMessage === 'User Signed up successfully' ? 
                 <>
