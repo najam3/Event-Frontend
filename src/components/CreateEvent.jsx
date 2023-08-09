@@ -55,20 +55,20 @@ const CreateEvent = () => {
             <h1>PUBLISH YOUR EVENT</h1>
             <label htmlFor="event-name">Event Name</label>
             <div>
-              <input type="text" placeholder="Give your event a title" name="event-name" id="event-name" value={event.name} onChange={(e) => setEvent({...event, name: e.target.value})}/>
+              <input required type="text" placeholder="Give your event a title" name="event-name" id="event-name" value={event.name} onChange={(e) => setEvent({...event, name: e.target.value})}/>
             </div>
             <label htmlFor="date">Date of event</label>
             <div>
-            <input type="date"  name="date" id="date" value={event.dateOfEvent} onChange={(e) => setEvent({...event,dateOfEvent: e.target.value})}/>
+            <input required type="date"  name="date" id="date" value={event.dateOfEvent} onChange={(e) => setEvent({...event,dateOfEvent: e.target.value})}/>
             </div>
             
             <label htmlFor="time">Time</label>
             <div>
-            <input type="time" name="time" id="time" value={event.time} onChange={(e) => setEvent({...event, time: e.target.value })} />
+            <input required type="time" name="time" id="time" value={event.time} onChange={(e) => setEvent({...event, time: e.target.value })} />
             </div>
               <label htmlFor="location">Location</label>
               <div>
-                <input type="text" placeholder="Enter the location" name="locataion" id="location" value={event.location} onChange={(e) =>  setEvent({...event, location:e.target.value})}/>
+                <input required type="text" placeholder="Enter the location" name="locataion" id="location" value={event.location} onChange={(e) =>  setEvent({...event, location:e.target.value})}/>
               </div>
             <label htmlFor="description">Description</label>
             <div style={{margin:'1em 0'}}>
@@ -81,7 +81,7 @@ const CreateEvent = () => {
             <div className="event-ticketing">
               <span>
                 <label htmlFor="price">Enter Ticket Price</label>
-                <input  type="number" name="price" id="price" value={event.ticket.price} onChange={(e) => setEvent({...event, ticket: { price: e.target.value }})} />
+                <input required  type="number" name="price" id="price" value={event.ticket.price} onChange={(e) => setEvent({...event, ticket: { price: e.target.value }})} />
               </span>
             </div>
 

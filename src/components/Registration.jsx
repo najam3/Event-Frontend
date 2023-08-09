@@ -83,9 +83,8 @@ const Registration = () => {
                 </div>
               )
         } else {
-            
-                return (
-                <div className="registration-now" style={{paddingTop: '3em'}}>
+          return (
+                <div className="registration-now" style={{paddingTop: '3em', paddingBottom:'3em'}}>
                     <div className={width <=800 ? 'small-container' : 'container'}>
                         {
                            responseMessage === 'User Signed up successfully' ? 
@@ -127,8 +126,7 @@ const Registration = () => {
                     
                         }
                     </div>
-                </div>
-              )
+                </div>)
         }
 
 }

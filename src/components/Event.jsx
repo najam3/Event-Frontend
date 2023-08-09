@@ -99,7 +99,7 @@ if(isLoading || loadingUserEvents) {
 }
  else {
   return (
-    <section style={{padding:'4em 0'}}>
+    <section style={{padding:'4em 0', minHeight:'100vh'}}>
       <div className={ width <=800 ? 'small-container' : 'container'  }>
     {isLoggedIn ? (
           <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap'}}>
@@ -108,7 +108,7 @@ if(isLoading || loadingUserEvents) {
             events={ updatedEvents? updatedEvents.length : 0 } 
             name={loggedInUser.name}/>
 
-          <button onClick={deleteAccount} style={{marginTop:'0.5em'}} type='button'>Delete Account</button>
+          <button onClick={deleteAccount} style={{marginTop:'1.5em', marginLeft:'1em'}} type='button'>Delete Account</button>
           </div>
         ) : (
           ''
