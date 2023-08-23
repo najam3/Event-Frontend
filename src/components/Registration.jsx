@@ -48,7 +48,7 @@ const Registration = () => {
           }
     
         try {
-          const data = await fetch('https://wild-red-smock.cyclic.app/register', options);
+          const data = await fetch(' https://dull-pink-dolphin-gear.cyclic.cloud/register', options);
           const response = await data.json(); 
          setResponseMessage(response.message);
          setIsLoading(false);

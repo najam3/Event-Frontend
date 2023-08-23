@@ -199,7 +199,7 @@ article img {
 
   @media screen and (min-width:375px) and (max-width: 800px) {
       section.modal {
-        width: 500px;
+        width: 300px;
       }
       .flex-ticketing {
         flex-direction: column;

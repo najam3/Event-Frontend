@@ -36,7 +36,7 @@ const Event = () => {
       };
 
       try {
-        const request = await fetch('https://wild-red-smock.cyclic.app/delete', options);
+        const request = await fetch(' https://dull-pink-dolphin-gear.cyclic.cloud/delete', options);
         const response = await request.json();
         console.log(response);
 
@@ -57,7 +57,7 @@ const Event = () => {
  const deleteAccount = async () => {
   setIsLoading(true)
   const { email } = loggedInUser;
-  const api = 'https://wild-red-smock.cyclic.app/deleteaccount';
+  const api = ' https://dull-pink-dolphin-gear.cyclic.cloud/deleteaccount';
   const options = {
      method: 'POST',
      headers:{
