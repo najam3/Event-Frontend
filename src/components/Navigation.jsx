@@ -8,6 +8,7 @@ import {AiOutlineCloseCircle} from 'react-icons/ai';
 import UseWindowResize from '../custom hooks/UseWindowResize';
 import Avatar from '../custom/Avatar';
 import loader from '../assets/Rolling-1s-200px.svg';
+import { apis } from '../api/config';
 
 const Navigation = () => {
     const [selected, setSelected] = useState(false);
@@ -42,7 +43,7 @@ const handleSubmit =  async (e) => {
     } 
     
     try {
-        const data = await fetch('https://wild-red-smock.cyclic.app/login', options);
+        const data = await fetch(apis.login, options);
         const response = await data.json();
         const {token} = response; 
 
